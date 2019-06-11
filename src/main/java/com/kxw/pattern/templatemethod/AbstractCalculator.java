@@ -25,13 +25,25 @@ public abstract class AbstractCalculator {
      * @return
      */
     public int calculate(String expression, String opt) {
-        //解析
+        int[] nums = split(expression, opt);
+        return this.calculate(nums[0], nums[1]);
+    }
+
+    /**
+     * 切分计算值
+     *
+     * @param expression
+     * @param opt
+     * @return
+     */
+    private int[] split(String expression, String opt) {
+        int[] numArray = new int[2];
         String[] nums = expression.split(opt);
         int num1 = Integer.parseInt(nums[0].trim());
         int num2 = Integer.parseInt(nums[1].trim());
-        //计算
-        return this.calculate(num1, num2);
+        numArray[0] = num1;
+        numArray[1] = num2;
+        return numArray;
     }
-
 
 }
