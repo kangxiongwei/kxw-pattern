@@ -24,7 +24,7 @@ public abstract class AbstractCalculator {
      * @param opt
      * @return
      */
-    public int calculate(String expression, String opt) {
+    public int execute(String expression, String opt) {
         int[] nums = split(expression, opt);
         return this.calculate(nums[0], nums[1]);
     }

@@ -13,14 +13,14 @@ public class CalculatorTest {
     @Test
     public void testPlus() {
         AbstractCalculator calculator = new PlusCalculator();
-        int calculate = calculator.calculate("8 + 9", "\\+");
+        int calculate = calculator.execute("8 + 9", "\\+");
         assertEquals(17, calculate);
     }
 
     @Test
     public void testMinus() {
         AbstractCalculator calculator = new MinusCalculator();
-        int calculate = calculator.calculate("8 - 7", "\\-");
+        int calculate = calculator.execute("8 - 7", "\\-");
         assertEquals(1, calculate);
     }
 
