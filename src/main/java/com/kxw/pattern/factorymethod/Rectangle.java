@@ -5,6 +5,7 @@ package com.kxw.pattern.factorymethod;
  * @date 2019/6/18 8:24 AM
  */
 public class Rectangle implements Shape {
+
     /**
      * 画图
      */
@@ -12,4 +13,5 @@ public class Rectangle implements Shape {
     public void draw() {
         System.out.println("[Rectangle] is drawing!");
     }
+
 }

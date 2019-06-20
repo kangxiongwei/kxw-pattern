@@ -5,6 +5,7 @@ package com.kxw.pattern.factorymethod;
  * @date 2019/6/18 8:23 AM
  */
 public class Circle implements Shape {
+
     /**
      * 画图
      */
@@ -12,4 +13,5 @@ public class Circle implements Shape {
     public void draw() {
         System.out.println("[Circle] is drawing!");
     }
+
 }
